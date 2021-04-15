@@ -209,10 +209,20 @@ Use the carMaker function below to do the following:
 */
 
 
-function carMaker(/* code here */) {
-    /* code here */
-    
-}
+const car = {
+    odometer: 10,
+    drive: function(distance){
+      return car.odometer = this.odometer + distance;
+    }
+  }
+  
+  function carMaker(array, distance) {
+      return array.drive(distance);
+  }
+  
+  console.log(carMaker(car, 100));
+  console.log(carMaker(car, 75));
+  console.log(car);
 
 
 /* 🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑 */
